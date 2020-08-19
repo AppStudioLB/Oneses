@@ -1,57 +1,41 @@
-<!DOCTYPE html>
-
 <html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-	<head>
-		<title>Public Pet</title>
-		<meta name="google-site-verification" content="cIrkR7nqZ1WyYhKQNcyaZ9zbXg1uv9x09zV8DPG6vWE" />
-	</head>
-	<body><h1>Public Pet</h1>
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
 
-		<p>Testing!</p>
-		<p>This is main page</p>
-		<p></p>
-		<div id="disqus_thread"></div>
+    <button onclick="login()">Login to Account</button>
+  </div>
 
-	</body>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCjOROWgfac6WmpvLQMA-DwiHBHRxshTgI",
-    authDomain: "publicpet-26cea.firebaseapp.com",
-    databaseURL: "https://publicpet-26cea.firebaseio.com",
-    projectId: "publicpet-26cea",
-    storageBucket: "publicpet-26cea.appspot.com",
-    messagingSenderId: "1023040026862",
-    appId: "1:1023040026862:web:b8bc3247ed766e785ddbff",
-    measurementId: "G-G982L5X5TT"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://public-pet.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBPmZU5GIVK_6iDzROpMaYgUaqVu4FadlY",
+      authDomain: "fir-web-login-8b7c5.firebaseapp.com",
+      databaseURL: "https://fir-web-login-8b7c5.firebaseio.com",
+      projectId: "fir-web-login-8b7c5",
+      storageBucket: "fir-web-login-8b7c5.appspot.com",
+      messagingSenderId: "301701306998"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
 </html>
