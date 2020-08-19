@@ -22,19 +22,29 @@
 
 
 
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBPmZU5GIVK_6iDzROpMaYgUaqVu4FadlY",
-      authDomain: "fir-web-login-8b7c5.firebaseapp.com",
-      databaseURL: "https://fir-web-login-8b7c5.firebaseio.com",
-      projectId: "fir-web-login-8b7c5",
-      storageBucket: "fir-web-login-8b7c5.appspot.com",
-      messagingSenderId: "301701306998"
-    };
-    firebase.initializeApp(config);
-  </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCjOROWgfac6WmpvLQMA-DwiHBHRxshTgI",
+    authDomain: "publicpet-26cea.firebaseapp.com",
+    databaseURL: "https://publicpet-26cea.firebaseio.com",
+    projectId: "publicpet-26cea",
+    storageBucket: "publicpet-26cea.appspot.com",
+    messagingSenderId: "1023040026862",
+    appId: "1:1023040026862:web:b8bc3247ed766e785ddbff",
+    measurementId: "G-G982L5X5TT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="index.js"></script>
 
 </body>
