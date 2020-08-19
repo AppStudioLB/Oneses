@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Public Pet Sign Up</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Public Pet Sign Up</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Make an Account</button>
+  
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onClick="location.href='index.html'">Go To Main</button>
+    </p>
+    <button onclick="logout()">Logout</button>
+   
+
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCjOROWgfac6WmpvLQMA-DwiHBHRxshTgI",
+    authDomain: "publicpet-26cea.firebaseapp.com",
+    databaseURL: "https://publicpet-26cea.firebaseio.com",
+    projectId: "publicpet-26cea",
+    storageBucket: "publicpet-26cea.appspot.com",
+    messagingSenderId: "1023040026862",
+    appId: "1:1023040026862:web:b8bc3247ed766e785ddbff",
+    measurementId: "G-G982L5X5TT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
