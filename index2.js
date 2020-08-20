@@ -28,11 +28,14 @@ function signup(){
 
   var email = document.getElementById("email_field").value;
   var password = document.getElementById("password_field").value;
+  user.sendEmailVerification()
+  // Email sent.
 
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
+
   // ...
 
 
