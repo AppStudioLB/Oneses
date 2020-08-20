@@ -24,10 +24,10 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function createUserWithEmailAndPassword(){
+function signup(){
 
-  var userEmail = document.getElementById("email_field").value;
-  var userPass = document.getElementById("password_field").value;
+  var email = document.getElementById("email_field").value;
+  var password = document.getElementById("password_field").value;
 
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
