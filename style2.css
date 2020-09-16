@@ -1,0 +1,37 @@
+
+body{
+  background-color: black;
+}
+
+button.img-button{
+  border: none;
+  background: transparent;
+  font-size: 1.125rem;
+}
+.fas{
+  color: white;
+}
+.keyword{
+  border : none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  width: 150px;
+  color: white;
+  font-size: 1.063rem;
+  font-style: "Malgun Gothic";
+}
+
+  select {
+    border: none;
+    outline: none;
+    width: 80px;
+    font-size: 1.125rem;
+    font-weight: 200;
+    background: transparent;
+    color: white;
+  }
+
+  select option{
+    background-color: black;
+}
