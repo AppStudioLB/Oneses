@@ -17,4 +17,20 @@ function Search(){
   }
   
 }
+$.ajax({
+  url: "http://stackoverflow.com",
+  data: { uname: "test" },
+  type: "GET",
+  beforeSend: function(xhr){xhr.setRequestHeader('X-TOKEN', 'xxxxx');},
+  success: function() { alert('Success!' + authHeader); }
+});
 
+or in this way,
+
+$.ajax({
+  url: "http://stackoverflow.com",
+  data: { uname: "test" },
+  type: "GET",
+  headers:{ "X-TOKEN": 'xxxxx'},
+  success: function() { alert('Success!' + authHeader); }
+});
